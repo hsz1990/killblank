@@ -1,0 +1,66 @@
+.contentbox{
+	position: absolute;
+	min-width: 1000px;
+	width: 75%;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #ccc;
+}
+.toolbox{
+	position: absolute;
+	max-width: 300px;
+	width: 20%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+#panel,#mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#mask{
+	z-index: 2;
+}
+.color-bg{
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.2em;
+	height: 1.2em;
+	border:1px solid #ccc;
+}
+.btn{
+	line-height: 40px;
+	border-radius: 5px;
+	background-color: #fb4491;
+	color:#fff;
+	padding: 0 1em;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.addfile{
+	position: relative;
+	margin: 0 auto;
+
+}
+.addfile>input.hide{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+.btn-save{
+	text-decoration: none;
+}
+.btn.disabled{
+	background-color: #ccc;
+}

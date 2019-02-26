@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="app">
+		<div class="contentbox">
+			<canvas id="panel"></canvas>
+			<canvas id="mask"></canvas>
+		</div>
+		<div class="toolbox">
+			<div class="btn addfile">
+				✚ 选择图片
+				<input type="file" class="hide">
+			</div>
+			<div class="settingbox">
+				<p>
+					背景颜色:
+					<span class="color-bg"></span>
+					<br/>
+					<span class="range-color-bg">#fff~#fff</span>
+				</p>
+				<p>文字间隔:<input type="number" class="margin" value="3">px</p>
+				<p>
+					图像缩放:
+					<input type="range" class="scale" min="0" max="200" value="0" step="1">
+					<span class="scale-text">0%</span>
+				</p>
+			</div>
+			<div class="btn btn-process disabled">
+				▶ 开始
+			</div>
+			<a class="btn btn-save disabled">
+				♥ 保存
+			</a>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="./shim.js"></script> -->
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
